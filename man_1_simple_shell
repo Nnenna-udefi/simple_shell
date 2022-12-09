@@ -1,0 +1,101 @@
+.TH SHELL 1 "DECEMBER 7, 2022"  "ALX-School" "0x16"
+ "1.01" "C - simple_shell - man page"
+
+.SH NAME
+.B simple_shell \- simple UNIX command interpreter made in C 
+
+.SH SYNOPSIS
+$ /hsh [options] [file]
+
+.SH DESCRIPTION
+Simple_Shell is a command language interpreter that executes commands read from the standard input.
+Clone of sh
+
+.SH Return Value
+
+Always returns the status of the previously executed command ( 0 if no command was executed) , number means exit fail codes
+
+.SH PATH
+
+looks in PATH env variable for executable program file location.
+
+.SH 
+
+.B Invocation
+.in +2n
+simple_shell can be invoked both interactively and non-interactively.
+If invoked with standard input not connected to a terminal, it reads and executes received commands in order.
+
+If simple_shell is invoked with standard input connected to a terminal, an interactive shell is opened.
+When executing interactively, the simpl_shell displays the prompt \"($) "\ when it is ready to read a command.
+
+.SH OPTIONS
+.B simple_shell
+Command options will be typed after the main command followed by a space and a
+ '-' symbol.
+
+.SH EXAMPLE
+
+./hsh [command] [options]
+$ ls -l
+
+.B Builtins
+.sp
+This section lists the builtin commands which are builtin because they need to perform
+some operation that can't be performed by a separate process.
+.sp
+.IP "-exit [status]"
+.sp
+Terminate the shell process. If status is given, it is used as the exit status of
+the shell; otherwise the exit status of the preceding command is used.
+.sp
+.IP "-help [builtin]"
+.sp
+Retrieve informational text on how use builtin
+.sp
+.IP "-unsetenv [variable]"
+.sp
+Unsets an environmental varibale of name [variable]
+.sp
+.IP "-setenv [key] [value]"
+.sp
+Set a local environmental variable with key-value pair. If key already exists, this
+action will replace the existing key with new value.
+.sp
+.IP "-cd [directory]"
+.sp
+Change working current directory to target directory. If "-" is inputted as second
+argument, it will change to last working directory. If ".." is inputted, it will
+take user to parent directory. If input is omitted, then user is take to $HOME.
+.sp
+.IP "-alias"
+.sp
+Work in progress in current version.
+.sp
+.IP "-history"
+.sp
+Work in progress in current version.
+.sp
+.SH EXIT STATUS
+.sp
+Errors that are detected by the shell, such as a syntax error, will cause the shell to
+exit with a non-zero exit status. Otherwise the shell will return the exit status of
+the last command executed, or if the exit builtin is used with a numeric argument,
+it will return the argument.
+.sp
+.SH ENVIRONMENT
+.sp
+.IP HOME
+User's login directory
+.sp
+.IP PATH
+The default search path for executables
+.sp
+.IP PS1
+The primary prompt string, which defaults to “$ ”
+
+.SH BUGS
+not many found.
+
+.SH AUTHOR
+Nnenna Udefi, Lawrence Tsekohol
