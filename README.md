@@ -1,13 +1,13 @@
-#ALX SIMPLE SHELL PROJECT
-Project to be done in teams of 2 people (your team: Nnenna Udefi, Lawrence Tsekohol)
-##PROJECT WAS DONE USING
+# ALX SIMPLE SHELL PROJECT
+Project was done in teams of 2 people (Nnenna Udefi, Lawrence Tsekohol)
+## PROJECT WAS DONE USING
 C language, Shell and Betty Linter
-##DESCRIPTION
+## DESCRIPTION
 Shell is a UNIX command line interpreter that provides a command line user interface for Unix-like operating systems. It gathers input from you and executes programs based on that input.
-##Tasks
+## Tasks
 ### 0. Betty would be proud
 Files: README.md, AUTHORS, man_1_simple_shell, help_files
-###1. Simple shell 0.1
+### 1. Simple shell 0.1
 mandatory
 Write a UNIX command line interpreter.
 
@@ -48,7 +48,7 @@ Simple shell 0.4 +
 * Implement the env built-in, that prints the current environment
 File: getenv.c, getinfo.c
 ### 6. Simple shell 0.1.1
-#advanced
+# advanced
 Simple shell 0.1 +
 
 * Write your own getline function
@@ -60,21 +60,21 @@ You don’t have to:
 * be able to move the cursor
 File: getLine.c, getenv.c
 
-###7. Simple shell 0.2.1
-#advanced
+### 7. Simple shell 0.2.1
+# advanced
 Simple shell 0.2 +
 
 You are not allowed to use strtok
 File: string2.c
 ### 8. Simple shell 0.4.1
-#advanced
+# advanced
 Simple shell 0.4 +
 
 * handle arguments for the built-in exit
 Usage: exit status, where status is an integer used to exit the shell
 File: builtin.c
 ### 9. setenv, unsetenv
-#advanced
+# advanced
 Simple shell 1.0 +
 
 Implement the setenv and unsetenv builtin commands
@@ -89,7 +89,7 @@ Command syntax: unsetenv VARIABLE
 * Should print something on stderr on failure
 File: environ.c
 ### 10. cd
-#advanced
+# advanced
 Simple shell 1.0 +
 
 Implement the builtin command cd:
@@ -103,17 +103,17 @@ man chdir, man getcwd
 File: builtin.c
 
 ### 11. ;
-#advanced
+# advanced
 Simple shell 1.0 +
 
 * Handle the commands separator ;
 ### 12. && and ||
-#advanced
+# advanced
 Simple shell 1.0 +
 
 * Handle the && and || shell logical operators
 ### 13. alias
-#advanced
+# advanced
 Simple shell 1.0 +
 
 Implement the alias builtin command
@@ -124,7 +124,7 @@ Usage: alias [name[='value'] ...]
 File: builtin1.c
 
 ### 14. Variables
-#advanced
+# advanced
 Simple shell 1.0 +
 
 * Handle variables replacement
@@ -132,12 +132,12 @@ Simple shell 1.0 +
 * Handle the $$ variable
 File: vars.c
 ### 15. Comments
-#advanced
+# advanced
 Simple shell 1.0 +
 * Handle comments (#)
 File: Helper1.c
 ### 16. File as input
-#advanced
+# advanced
 Simple shell 1.0 +
 
 Usage: simple_shell [filename]
@@ -171,7 +171,7 @@ echo 'hello'
 $ ./hsh test
 'hello'
 $
-### How hsh works
+## How hsh works
 * Prints a prompt and waits for a command from the user
 * Creates a child process in which the command is checked
 * Checks for built-ins, aliases in the PATH, and local executable programs
