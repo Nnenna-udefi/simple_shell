@@ -6,7 +6,7 @@ C language, Shell and Betty Linter
 Shell is a UNIX command line interpreter that provides a command line user interface for Unix-like operating systems. It gathers input from you and executes programs based on that input.
 ## Tasks
 ### 0. Betty would be proud
-Files: README.md, AUTHORS, man_1_simple_shell, help_files
+* **Files: README.md, AUTHORS, man_1_simple_shell, help_files**
 ### 1. Simple shell 0.1
 mandatory
 Write a UNIX command line interpreter.
@@ -29,7 +29,7 @@ You don’t have to:
 be able to move the cursor
 * handle commands with arguments
 execve will be the core part of your Shell, don’t forget to pass the environ to it…
-File: shell_loop.c
+* **File: shell_loop.c**
 ### 2. Simple shell 0.2
 * Handle command lines with arguments
 File: main.c
@@ -40,15 +40,14 @@ File: main.c
 * Implement the exit built-in, that exits the shell
 * Usage: exit
 * You don’t have to handle any argument to the built-in exit
-File: builtin.c
+* **File: builtin.c**
 ### 5. Simple shell 1.0
 mandatory
 Simple shell 0.4 +
 
 * Implement the env built-in, that prints the current environment
-File: getenv.c, getinfo.c
+* **File: getenv.c, getinfo.c**
 ### 6. Simple shell 0.1.1
-# advanced
 Simple shell 0.1 +
 
 * Write your own getline function
@@ -58,23 +57,21 @@ Simple shell 0.1 +
 You don’t have to:
 
 * be able to move the cursor
-File: getLine.c, getenv.c
+* **File: getLine.c, getenv.c**
 
 ### 7. Simple shell 0.2.1
-# advanced
 Simple shell 0.2 +
 
 You are not allowed to use strtok
-File: string2.c
+* **File: string2.c**
 ### 8. Simple shell 0.4.1
-# advanced
+
 Simple shell 0.4 +
 
 * handle arguments for the built-in exit
 Usage: exit status, where status is an integer used to exit the shell
-File: builtin.c
+* **File: builtin.c**
 ### 9. setenv, unsetenv
-# advanced
 Simple shell 1.0 +
 
 Implement the setenv and unsetenv builtin commands
@@ -87,9 +84,8 @@ unsetenv
 * Remove an environment variable
 Command syntax: unsetenv VARIABLE
 * Should print something on stderr on failure
-File: environ.c
+* **File: environ.c**
 ### 10. cd
-# advanced
 Simple shell 1.0 +
 
 Implement the builtin command cd:
@@ -100,20 +96,17 @@ Changes the current directory of the process.
 * You have to handle the command cd -
 * You have to update the environment variable PWD when you change directory
 man chdir, man getcwd
-File: builtin.c
+* **File: builtin.c**
 
 ### 11. ;
-# advanced
 Simple shell 1.0 +
 
 * Handle the commands separator ;
 ### 12. && and ||
-# advanced
 Simple shell 1.0 +
 
 * Handle the && and || shell logical operators
 ### 13. alias
-# advanced
 Simple shell 1.0 +
 
 Implement the alias builtin command
@@ -124,20 +117,17 @@ Usage: alias [name[='value'] ...]
 File: builtin1.c
 
 ### 14. Variables
-# advanced
 Simple shell 1.0 +
 
 * Handle variables replacement
 * Handle the $? variable
 * Handle the $$ variable
-File: vars.c
+* **File: vars.c**
 ### 15. Comments
-# advanced
 Simple shell 1.0 +
 * Handle comments (#)
-File: Helper1.c
+* **File: Helper1.c**
 ### 16. File as input
-# advanced
 Simple shell 1.0 +
 
 Usage: simple_shell [filename]
